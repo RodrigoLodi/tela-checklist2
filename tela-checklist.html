@@ -71,6 +71,11 @@
 		.placa, .tecnico {
 			font-weight: bolder;
 		}
+		.status > div {
+			margin: auto !important;
+			text-align: center;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
@@ -87,20 +92,20 @@
 	</div>
 	<div class="row gx-0">
 		<div class="col offset-2 tecnico">
-			TÉCNICO:	
+			CLIENTE:	
 		</div>
 	</div>
 	<form method="post">
 		<div class="row gx-0 parte-1">
 			<div class="col-3"></div>
 			<div class="col-6">
-				<input type="checkbox" name="AVARIADO" id="AVARIADO">
+				<input type="RADIO" name="CONDICAO" id="AVARIADO">
 				<label for="AVARIADO">AVARIADO</label><br>
-				<input type="checkbox" name="RISCADO" id="RISCADO">
+				<input type="RADIO" name="CONDICAO" id="RISCADO">
 				<label for="RISCADO">RISCADO</label><br>
-				<input type="checkbox" name="VIDRO QUEBRADO" id="VIDRO QUEBRADO">
+				<input type="RADIO" name="CONDICAO" id="VIDRO QUEBRADO">
 				<label for="VIDRO QUEBRADO">VIDRO QUEBRADO</label><br>
-				<input type="checkbox" name="OUTROS" id="OUTROS">
+				<input type="RADIO" name="CONDICAO" id="OUTROS">
 				<label for="OUTROS">OUTROS</label>
 			</div>
 			<div class="col-3"></div>
@@ -183,6 +188,26 @@
 				<label for="ANTENA">Antena</label><br>
 				<input type="checkbox" name="TAPETES" id="TAPETES">
 				<label for="TAPETES">Tapetes</label><br>
+			</div>
+			<div class="col"></div>
+		</div>
+		<hr>
+		<div class="row status">
+			<div class="col">
+				<h1>STATUS</h1>
+			</div>
+		</div>
+		<div class="row gx-0 parte-5">
+			<div class="col-3"></div>
+			<div class="col-7">
+				<input type="radio" name="STATUS" id="PARTICULAR">
+				<label for="PARTICULAR">Particular</label><br>
+				<input type="radio" name="STATUS" id="PARTICULAR-RODANDO">
+				<label for="PARTICULAR-RODANDO">Particular Rodando</label><br>
+				<input type="radio" name="STATUS" id="SEGURADORA">
+				<label for="SEGURADORA">Seguradora</label><br>
+				<input type="radio" name="STATUS" id="SEGURADORA-RODANDO">
+				<label for="SEGURADORA-RODANDO">Seguradora Rodando</label><br>
 			</div>
 			<div class="col"></div>
 		</div>
