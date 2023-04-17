@@ -68,7 +68,7 @@
 			text-align: center;
 			margin: 15px 0px 15px 0px;
 		}
-		.placa, .tecnico {
+		.placa, .cliente, .vendedor {
 			font-weight: bolder;
 		}
 		.status > div {
@@ -85,14 +85,27 @@
 		</div>
 	</div>
 	<div class="row gx-0">
-		<div class="col offset-2 placa">
-			PLACA:	
+		<div class="col-3 offset-2 placa">
+			PLACA:
 		</div>
-		
+		<div class="col-7">
+			<input type="text" name="PLACA" style="width: 70%;">
+		</div>
 	</div>
 	<div class="row gx-0">
-		<div class="col offset-2 tecnico">
-			CLIENTE:	
+		<div class="col-3 offset-2 cliente">
+			CLIENTE:
+		</div>
+		<div class="col-7">
+			<input type="text" name="CLIENTE" style="width: 70%;">
+		</div>
+	</div>
+	<div class="row gx-0">
+		<div class="col-3 offset-2 vendedor">
+			VENDEDOR:
+		</div>
+		<div class="col-7">
+			<input type="text" name="VENDEDOR" style="width: 70%;">
 		</div>
 	</div>
 	<form method="post">
